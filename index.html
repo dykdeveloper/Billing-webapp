@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Billing Report</title>
+</head>
+<body>
+    <div class="report">
+
+        <div class="report1" id="report1">
+            <!-- heading class -->
+        <div class="heading">
+            <h2>REPORT</h2>
+        </div>
+
+        <!-- name section -->
+        <div class="name">
+            <div class="n1">
+                <label for="name">Name :</label>
+                <input type="text"  id="name">
+            </div>
+
+            <div class="n2">
+                <label for="phone">Phone :</label>
+                <input type="text" id="phone">
+            </div>
+        </div>
+
+        <!-- input field -->
+        <div class="input_field">
+             <div class="r1">
+                <label for="inp1">Item Name:</label><br>
+                <input type="text" id="inp1"> 
+             </div>
+             <div class="r1">
+                <label for="inp2">Item No.:</label><br>
+                <input type="text" id="inp2"> 
+             </div>
+             <div class="r1">
+                <label for="inp3">Item Cost:</label><br>
+                <input type="text" id="inp3"> 
+             </div>
+             <div class="r2">
+                <button onclick="add()">ADD</button>
+             </div>
+        </div>
+
+        <!-- heading field -->
+        <div class="heading_field">
+            <p class="h1">Item Name</p>
+            <p class="h2">Item No.</p>
+            <p class="h3">Item Cost</p>
+            <p class="h4">Total</p>
+        </div>
+
+        <!-- added item -->
+        <div class="added_item">
+            <div class="iname" id="iname"></div>
+            <div class="ino" id="ino"></div>
+            <div class="icost" id="icost"></div>
+            <div class="total" id="total"></div>
+        </div>
+
+        <!-- calculate button -->
+        <div class="calculate">
+            <button id="calculate">GET TOTAL</button>
+        </div>
+
+        <!-- get total -->
+        <div class="get_total">
+            <div class="total_name">
+                <p>TOTAL AMOUNT &nbsp;&nbsp;&nbsp;:</p>
+                <P>C GST @ 2.5% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</P>
+                <P>S GST @ 2.5% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</P>
+                <P>GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</P>
+            </div>
+            <div class="total_value">
+                <p id="tamount"></p>
+                <p id="cgst"></p>
+                <p id="sgst"></p>
+                <p id="gtotal"></p>
+            </div>
+        </div>
+
+        <!-- clear button -->
+        <div class="clear">
+            <button id="all_clear">GENERATE BILL</button>
+        </div>
+        </div>
+
+        <div class="bill" id="bill">
+            <div class="b1">
+                <div class="bheading">
+                    <h1>customer bill</h1>
+                </div>
+
+                <div class="bname">
+                    <div class="bn1">
+                        <p class="bnp1">Name :</p>
+                        <p class="bnp2" id="bnp2"></p>
+                    </div>
+                    <div class="bn2">
+                        <p class="bnp3">Phone :</p>
+                        <p class="bnp4" id="bnp4"></p>
+                    </div>
+                </div>
+
+                <div class="btitle">
+                    <p>Item Name</p>
+                    <p>Item No.</p>
+                    <p>Item Cost</p>
+                    <p>Total</p>
+                </div>
+
+                <div class="bdetail">
+                    <div class="item_name" id="item_name">
+                    </div>
+                    <div class="item_name" id="item_no">
+                    </div>
+                    <div class="item_name" id="item_cost">
+                    </div>
+                    <div class="item_name" id="itotal">
+                    </div>
+                </div>
+
+                <div class="btotal">
+                    <div></div>
+                    <div></div>
+                    <div class="btname">
+                        <p>TOTAL AMOUNT :</p>
+                        <p>C GST @ 2.5% :</p>
+                        <p>S GST @ 2.5% :</p>
+                        <p>GRAND TOTAL :</p>
+                    </div>
+                    <div class="bttotal">
+                        <p id="tta"></p>
+                        <p id="ttcgst"></p>
+                        <p id="ttsgst"></p>
+                        <p id="ttgt"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btngp">
+                <button class="bbb1" id="print">PRINT</button>
+
+                <BUtton class="bbb1" id="back">BACK</BUtton>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <!-- add javascript -->
+    <script src="script/script.js"></script>
+</body>
+</html>
